@@ -1,0 +1,660 @@
+ <div class="modal hide fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-lg">
+       <div class="modal-content">
+        <div class="modal-header bg-dark">
+              <div class="col-md-8 mr-5">
+                <h4 class="modal-title text-light">Pintura <i ><img src="https://png.icons8.com/ios/26/3eb8e4/roller-brush.png"></i></h4>    
+              </div> 
+               <div class="col-md-2 mt-2">
+                  <h5 class="ml-2 text-success">É Grátis!</h5>
+               </div>
+       <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="alert">Mensagem enviada com sucesso</div>
+             <!-- multistep form -->
+          <form id="msform">
+              <!-- progressbar -->
+              <ul id="progressbar">
+              <li class="active">Info</li>
+              <li class="progressbar">Lugar</li>
+              <li >Objeto</li>
+              <li>Tamanho</li>
+              <li>Concluído</li>
+              </ul>
+              <!-- fieldsets -->
+              <fieldset>
+                  <h2 class="fs-title">Informações</h2>
+                      <h5 class="fs-subtitle animated bounceInRight">Nome</h5> 
+                          <input class="form-control form-sm my-auto" name="name" id="name" type="text" placeholder="Nome Completo">
+                      <h5 class="fs-subtitle animated animated1 bounceInRight mt-4">E-mail</h5> 
+                          <input class="form-control form-sm my-auto" name="email" id="email" type="email" placeholder="exemplo.exemplo@poly.com">
+                          <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                  </fieldset>
+                      <fieldset>
+                          <h2 class="fs-title">Onde Sera realizado?</h2>
+                          <h5 class="fs-subtitle">Cep</h3>
+                          <input class="form-control form-sm mx my-auto" name="cep" id="cep" type="text" placeholder="apenas números" maxlength="8"> 
+                          <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                                                
+                          <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                      </fieldset>
+                      <fieldset>
+                          <h2 class="fs-title">Oque vamos pintar?</h2>
+                          <select id="tipo" class="form-control mt-2">
+                              <option selected>Parede</option>
+                              <option>Portão</option>
+                              <option>Móvel</option>
+                              <option>Janela</option>
+                              <option>Porta</option>
+                              <option>Outros</option> 
+                              <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                
+                              <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                      </fieldset>
+                      <fieldset>
+                      <h2 class="fs-title">Tamanho</h2>
+                          <div class="row mt-3">
+                          <div class="col-12 mx-auto">
+                          <input class="col-5 mr-2" name="altura" id="altura" placeholder="Altura"> x
+                          <input class="col-5 ml-2" name="largura" id="largura" placeholder="Largura">
+                          </div>
+                          </div>
+                          <input type="button" name="previous" class="previous action-button" value="Anterior" />
+                          <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                          </fieldset>
+                      <fieldset>
+                          <h2 class="fs-title">Observação</h2>
+                          <input type="text-area" name="message" id="message" placeholder="Caso queira adicionar alguma informação...">                                                                      
+                          <input type="button" name="previous" class="previous action-button" value="Anterior" />  
+                          <input type="submit"  class="action-button" value="Enviar" > 
+                      </fieldset>
+          </form>
+
+          </div>
+       </div>
+  </div>
+</div>
+
+
+
+<div class="modal hide fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">        
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header bg-dark">
+   <div class="col-md-8 mr-5">
+       <h4 class="modal-title text-light">Pisos <i ><img src="https://png.icons8.com/ios/26/3eb8e4/wooden-floor.png"></i></h4>    
+  </div> 
+      <div class="col-md-2 mt-2">
+        <h5 class="ml-2 text-success">É Grátis!</h5>
+      </div>
+     <button type="button" class="close" data-dismiss="modal">&times;</button>
+   </div>
+
+<div class="modal-body">
+  <div class="alert">Mensagem enviada com sucesso</div>
+      <!-- multistep form -->
+  <form id="msform" method="post" action="send" >
+      <!-- progressbar -->
+      <ul id="progressbar">
+      <li class="active">Info</li>
+      <li class="progressbar">Local</li>
+      <li >Ambiente</li>
+      <li>Tamanho</li>
+      <li>Concluído</li>
+      </ul>
+      <!-- fieldsets -->
+      <fieldset>
+          <h2 class="fs-title">Informações</h2>
+              <h5 class="fs-subtitle animated bounceInRight">Nome</h5> 
+                  <input class="form-control form-sm my-auto" name="name" id="name" type="text" placeholder="Nome Completo">
+              <h5 class="fs-subtitle animated animated1 bounceInRight mt-4">E-mail</h5> 
+                  <input class="form-control form-sm my-auto" name="email" id="email" type="email" placeholder="exemplo.exemplo@poly.com">
+                  <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+          </fieldset>
+              <fieldset>
+                  <h2 class="fs-title">Onde Sera realizado?</h2>
+                  <h5 class="fs-subtitle">Cep</h3>
+                  <input class="form-control form-sm mx my-auto" name="cep" id="cep" type="text" placeholder="apenas números" maxlength="8"> 
+                  <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                                                
+                  <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+              </fieldset>
+              <fieldset>
+                  <h2 class="fs-title">Aonde vamos colocar?</h2>
+                  <select id="tipo" class="form-control mt-2">
+                      <option selected>Parede</option>
+                      <option>Chão</option>
+                      <option>Outros</option> 
+                      <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                
+                      <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+              </fieldset>
+              <fieldset>
+              <h2 class="fs-title">Tamanho</h2>
+                  <div class="row mt-3">
+                  <div class="col-12 mx-auto">
+                  <input class="col-5 mr-2" name="altura" id="altura" placeholder="Altura (M)"> x
+                  <input class="col-5 ml-2" name="largura" id="largura" placeholder="Largura (M)">
+                  </div>
+                  </div>
+                  <input type="button" name="previous" class="previous action-button" value="Anterior" />
+                  <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                  </fieldset>
+              <fieldset>
+                  <h2 class="fs-title">Observação</h2>
+                  <input type="text-area" name="message" id="message" placeholder="Caso queira adicionar alguma informação...">                                                                      
+                  <input type="button" name="previous" class="previous action-button" value="Anterior" />  
+                  <input type="submit"  class="action-button" value="Enviar" > 
+              </fieldset>
+  </form>
+</div>
+</div>
+</div>
+</div>    
+
+<div class="modal hide fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">        
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+         <div class="col-md-8 mr-5">
+             <h4 class="modal-title text-light">Gesso <i ><img src="https://png.icons8.com/ios/26/3eb8e4/trowel.png"></i></h4>    
+        </div> 
+            <div class="col-md-2 mt-2">
+              <h5 class="ml-2 text-success">É Grátis!</h5>
+            </div>
+           <button type="button" class="close" data-dismiss="modal">&times;</button>
+         </div>
+
+    <div class="modal-body">
+        <div class="alert">Mensagem enviada com sucesso</div>
+            <!-- multistep form -->
+        <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+            <li class="active">Info</li>
+            <li class="progressbar">Local</li>
+            <li >Tipo</li>
+            <li>Tamanho</li>
+            <li>Concluído</li>
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+                <h2 class="fs-title">Informações</h2>
+                    <h5 class="fs-subtitle animated bounceInRight">Nome</h5> 
+                        <input class="form-control form-sm my-auto" name="name" id="name" type="text" placeholder="Nome Completo">
+                    <h5 class="fs-subtitle animated animated1 bounceInRight mt-4">E-mail</h5> 
+                        <input class="form-control form-sm my-auto" name="email" id="email" type="email" placeholder="exemplo.exemplo@poly.com">
+                        <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                </fieldset>
+                    <fieldset>
+                        <h2 class="fs-title">Onde Sera realizado?</h2>
+                        <h5 class="fs-subtitle">Cep</h3>
+                        <input class="form-control form-sm mx my-auto" name="cep" id="cep" type="text" placeholder="apenas números" maxlength="8"> 
+                        <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                                                
+                        <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                    </fieldset>
+                    <fieldset>
+                        <h2 class="fs-title">Que tipo de trabalho iremos realizar ?</h2>
+                        <select id="tipo" class="form-control mt-2">
+                            <option selected>Sanca</option>
+                            <option>Painel</option>
+                            <option>Gesso 3D</option>
+                            <option>Forro de teto</option>
+                            <option>Dry-Wall</option> 
+                            <option>Outros</option> 
+                            <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                
+                            <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                    </fieldset>
+                    <fieldset>
+                    <h2 class="fs-title">Tamanho</h2>
+                        <div class="row mt-3">
+                        <div class="col-12 mx-auto">
+                        <input class="col-5 mr-2" name="altura" id="altura" placeholder="Altura (M)"> x
+                        <input class="col-5 ml-2" name="largura" id="largura" placeholder="Largura (M)">
+                        </div>
+                        </div>
+                        <input type="button" name="previous" class="previous action-button" value="Anterior" />
+                        <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                        </fieldset>
+                    <fieldset>
+                        <h2 class="fs-title">Observação</h2>
+                        <input type="text-area" name="message" id="message" placeholder="Caso queira adicionar alguma informação...">                                                                      
+                        <input type="button" name="previous" class="previous action-button" value="Anterior" />  
+                        <input type="submit"  class="action-button" value="Enviar" > 
+                    </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>   
+
+<div class="modal hide fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">        
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-dark">
+             <div class="col-md-8 mr-5">
+                 <h4 class="modal-title text-light">Fachada <i ><img src="https://png.icons8.com/ios/26/3eb8e4/building.png"></i></h4>    
+            </div> 
+                <div class="col-md-2 mt-2">
+                  <h5 class="ml-2 text-success">É Grátis!</h5>
+                </div>
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+             </div>
+
+        <div class="modal-body">
+            <div class="alert">Mensagem enviada com sucesso</div>
+                <!-- multistep form -->
+            <form id="msform">
+                <!-- progressbar -->
+                <ul id="progressbar" class="d-flex justify-content-center">
+                <li class="active">Info</li>
+                <li >Local</li>
+                <li >Condição</li>
+                <li>Concluido</li>
+                </ul>
+                <!-- fieldsets -->
+                <fieldset>
+                    <h2 class="fs-title">Informações</h2>
+                        <h5 class="fs-subtitle animated bounceInRight">Nome</h5> 
+                            <input class="form-control form-sm my-auto" name="name" id="name" type="text" placeholder="Nome Completo">
+                        <h5 class="fs-subtitle animated animated1 bounceInRight mt-4">E-mail</h5> 
+                            <input class="form-control form-sm my-auto" name="email" id="email" type="email" placeholder="exemplo.exemplo@poly.com">
+                            <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                    </fieldset>
+                        <fieldset>
+                            <h2 class="fs-title">Onde Sera realizado?</h2>
+                            <h5 class="fs-subtitle">Cep</h3>
+                            <input class="form-control form-sm mx my-auto" name="cep" id="cep" type="text" placeholder="apenas números" maxlength="8"> 
+                            <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                                                
+                            <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                        </fieldset>
+                        <fieldset>
+                            <h2 class="fs-title">Precisa de reparos ?</h2>
+                            <select id="tipo" class="form-control mt-2">
+                                <option selected>sim</option>
+                                <option>Não</option>
+                                <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                
+                                <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                        </fieldset>
+                        <fieldset>
+                            <h2 class="fs-title">Observação</h2>
+                            <input type="text-area" name="message" id="message" placeholder="Caso queira adicionar alguma informação...">                                                                      
+                            <input type="button" name="previous" class="previous action-button" value="Anterior" />  
+                            <input type="submit"  class="action-button" value="Enviar" > 
+                        </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+<div class="modal hide fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">        
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-dark">
+             <div class="col-md-8 mr-5">
+                 <h4 class="modal-title text-light">Hidraulica <i ><img src="https://png.icons8.com/ios/26/3eb8e4/building.png"></i></h4>    
+            </div> 
+                <div class="col-md-2 mt-2">
+                  <h5 class="ml-2 text-success">É Grátis!</h5>
+                </div>
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+             </div>
+
+        <div class="modal-body">
+            <div class="alert">Mensagem enviada com sucesso</div>
+                <!-- multistep form -->
+            <form id="msform">
+                <!-- progressbar -->
+                <ul id="progressbar" class="d-flex justify-content-center">
+                <li class="active">Info</li>
+                <li >Local</li>
+                <li >Tipo</li>
+                <li>Concluido</li>
+                </ul>
+                <!-- fieldsets -->
+                <fieldset>
+                    <h2 class="fs-title">Informações</h2>
+                        <h5 class="fs-subtitle animated bounceInRight">Nome</h5> 
+                            <input class="form-control form-sm my-auto" name="name" id="name" type="text" placeholder="Nome Completo">
+                        <h5 class="fs-subtitle animated animated1 bounceInRight mt-4">E-mail</h5> 
+                            <input class="form-control form-sm my-auto" name="email" id="email" type="email" placeholder="exemplo.exemplo@poly.com">
+                            <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                    </fieldset>
+                        <fieldset>
+                            <h2 class="fs-title">Onde Sera realizado?</h2>
+                            <h5 class="fs-subtitle">Cep</h3>
+                            <input class="form-control form-sm mx my-auto" name="cep" id="cep" type="text" placeholder="apenas números" maxlength="8"> 
+                            <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                                                
+                            <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                        </fieldset>
+                        <fieldset>
+                            <h2 class="fs-title">Qual o tipo de serviço?</h2>
+                            <select id="tipo" class="form-control mt-2">
+                                <option selected>Reparo</option>
+                                <option>Contrução</option>
+                                <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                
+                                <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                        </fieldset>
+                        <fieldset>
+                            <h2 class="fs-title">Observação</h2>
+                            <input type="text-area" name="message" id="message" placeholder="Caso queira adicionar alguma informação...">                                                                      
+                            <input type="button" name="previous" class="previous action-button" value="Anterior" />  
+                            <input type="submit"  class="action-button" value="Enviar" > 
+                        </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="modal hide fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">        
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-dark">
+             <div class="col-md-8 mr-5">
+                 <h4 class="modal-title text-light">Elétrica <i ><img src="https://png.icons8.com/ios/26/3eb8e4/lightning-bolt.png"></i></h4>    
+            </div> 
+                <div class="col-md-2 mt-2">
+                  <h5 class="ml-2 text-success">É Grátis!</h5>
+                </div>
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+             </div>
+
+        <div class="modal-body">
+            <div class="alert">Mensagem enviada com sucesso</div>
+                <!-- multistep form -->
+            <form id="msform">
+                <!-- progressbar -->
+                <ul id="progressbar" class="d-flex justify-content-center">
+                <li class="active">Info</li>
+                <li >Local</li>
+                <li >Tipo</li>
+                <li>Concluido</li>
+                </ul>
+                <!-- fieldsets -->
+                <fieldset>
+                    <h2 class="fs-title">Informações</h2>
+                        <h5 class="fs-subtitle animated bounceInRight">Nome</h5> 
+                            <input class="form-control form-sm my-auto" name="name" id="name" type="text" placeholder="Nome Completo">
+                        <h5 class="fs-subtitle animated animated1 bounceInRight mt-4">E-mail</h5> 
+                            <input class="form-control form-sm my-auto" name="email" id="email" type="email" placeholder="exemplo.exemplo@poly.com">
+                            <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                    </fieldset>
+                        <fieldset>
+                            <h2 class="fs-title">Onde Sera realizado?</h2>
+                            <h5 class="fs-subtitle">Cep</h3>
+                            <input class="form-control form-sm mx my-auto" name="cep" id="cep" type="text" placeholder="apenas números" maxlength="8"> 
+                            <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                                                
+                            <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                        </fieldset>
+                        <fieldset>
+                            <h2 class="fs-title">Qual o tipo de serviço?</h2>
+                            <select id="tipo" class="form-control mt-2">
+                                <option selected>Fiação</option>
+                                <option>Iluminação</option>
+                                <option>Manutenção</option>
+                                <option>Outros</option>
+                                <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                
+                                <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                        </fieldset>
+                        <fieldset>
+                            <h2 class="fs-title">Observação</h2>
+                            <input type="text-area" name="message" id="message" placeholder="Caso queira adicionar alguma informação...">                                                                      
+                            <input type="button" name="previous" class="previous action-button" value="Anterior" />  
+                            <input type="submit"  class="action-button" value="Enviar" > 
+                        </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>  
+      </section>
+
+      <div class="modal hide fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">        
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+               <div class="col-md-8 mr-5">
+                   <h4 class="modal-title text-light">Limpeza  <i ><img src="https://png.icons8.com/ios/26/3eb8e4/housekeeping.png"></i></h4>    
+              </div> 
+                  <div class="col-md-2 mt-2">
+                    <h5 class="ml-2 text-success">É Grátis!</h5>
+                  </div>
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+  
+          <div class="modal-body">
+              <div class="alert">Mensagem enviada com sucesso</div>
+                  <!-- multistep form -->
+              <form id="msform">
+                  <!-- progressbar -->
+                  <ul id="progressbar" class="d-flex justify-content-center">
+                  <li class="active">Info</li>
+                  <li >Local</li>
+                  <li >Frequência</li>
+                  <li>Concluido</li>
+                  </ul>
+                  <!-- fieldsets -->
+                  <fieldset>
+                      <h2 class="fs-title">Informações</h2>
+                          <h5 class="fs-subtitle animated bounceInRight">Nome</h5> 
+                              <input class="form-control form-sm my-auto" name="name" id="name" type="text" placeholder="Nome Completo">
+                          <h5 class="fs-subtitle animated animated1 bounceInRight mt-4">E-mail</h5> 
+                              <input class="form-control form-sm my-auto" name="email" id="email" type="email" placeholder="exemplo.exemplo@poly.com">
+                              <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                      </fieldset>
+                          <fieldset>
+                              <h2 class="fs-title">Onde Sera realizado?</h2>
+                              <h5 class="fs-subtitle">Cep</h3>
+                              <input class="form-control form-sm mx my-auto" name="cep" id="cep" type="text" placeholder="apenas números" maxlength="8"> 
+                              <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                                                
+                              <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                          </fieldset>
+                          <fieldset>
+                              <h2 class="fs-title">Quantas vezes precisará da limpeza ?</h2>
+                              <select id="lara" class="form-control mt-2">
+                                  <option selected>De 1 a 7 dias</option>
+                                  <option>De 7 a 15 dias</option>
+                                  <option>De 15 a 30 dias</option>
+                                  <option>De 30 a 60 dias</option>
+                                  <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                
+                                  <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                          </fieldset>
+                          <fieldset>
+                              <h2 class="fs-title">Observação</h2>
+                              <input type="text-area" name="message" id="message" placeholder="Caso queira adicionar alguma informação...">                                                                      
+                              <input type="button" name="previous" class="previous action-button" value="Anterior" />  
+                              <input type="submit"  class="action-button" value="Enviar" > 
+                          </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      
+      <div class="modal hide fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">        
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+               <div class="col-md-8 mr-5">
+                   <h4 class="modal-title text-light">Vigilância <i ><img src="https://png.icons8.com/ios/26/3eb8e4/policeman-male.png"></i></h4>    
+              </div> 
+                  <div class="col-md-2 mt-2">
+                    <h5 class="ml-2 text-success">É Grátis!</h5>
+                  </div>
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+  
+          <div class="modal-body">
+              <div class="alert">Mensagem enviada com sucesso</div>
+                  <!-- multistep form -->
+              <form id="msform">
+                  <!-- progressbar -->
+                  <ul id="progressbar" class="d-flex justify-content-center">
+                  <li class="active">Info</li>
+                  <li >Local</li>
+                  <li >Frequência</li>
+                  <li>Concluido</li>
+                  </ul>
+                  <!-- fieldsets -->
+                  <fieldset>
+                      <h2 class="fs-title">Informações</h2>
+                          <h5 class="fs-subtitle animated bounceInRight">Nome</h5> 
+                              <input class="form-control form-sm my-auto" name="name" id="name" type="text" placeholder="Nome Completo">
+                          <h5 class="fs-subtitle animated animated1 bounceInRight mt-4">E-mail</h5> 
+                              <input class="form-control form-sm my-auto" name="email" id="email" type="email" placeholder="exemplo.exemplo@poly.com">
+                              <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                      </fieldset>
+                          <fieldset>
+                              <h2 class="fs-title">Onde Sera realizado?</h2>
+                              <h5 class="fs-subtitle">Cep</h3>
+                              <input class="form-control form-sm mx my-auto" name="cep" id="cep" type="text" placeholder="apenas números" maxlength="8"> 
+                              <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                                                
+                              <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                          </fieldset>
+                          <fieldset>
+                              <h2 class="fs-title">Quantas vezes precisará da vigilância ?</h2>
+                              <select id="tipo" class="form-control mt-2">
+                                  <option selected>De 1 a 7 dias</option>
+                                  <option>De 7 a 15 dias</option>
+                                  <option>De 15 a 30 dias</option>
+                                  <option>De 30 a 60 dias</option>
+                                  <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                
+                                  <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                          </fieldset>
+                          <fieldset>
+                              <h2 class="fs-title">Observação</h2>
+                              <input type="text-area" name="message" id="message" placeholder="Caso queira adicionar alguma informação...">                                                                      
+                              <input type="button" name="previous" class="previous action-button" value="Anterior" />  
+                              <input type="submit"  class="action-button" value="Enviar" > 
+                          </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      <div class="modal hide fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">        
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+               <div class="col-md-8 mr-5">
+                   <h4 class="modal-title text-light">Zeladoria <i ><img src="https://png.icons8.com/ios/26/3eb8e4/housekeeper-male.png"></i></h4>    
+              </div> 
+                  <div class="col-md-2 mt-2">
+                    <h5 class="ml-2 text-success">É Grátis!</h5>
+                  </div>
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+               </div>
+  
+          <div class="modal-body">
+              <div class="alert">Mensagem enviada com sucesso</div>
+                  <!-- multistep form -->
+              <form id="msform">
+                  <!-- progressbar -->
+                  <ul id="progressbar" class="d-flex justify-content-center">
+                  <li class="active">Info</li>
+                  <li >Local</li>
+                  <li >Frequência</li>
+                  <li>Concluido</li>
+                  </ul>
+                  <!-- fieldsets -->
+                  <fieldset>
+                      <h2 class="fs-title">Informações</h2>
+                          <h5 class="fs-subtitle animated bounceInRight">Nome</h5> 
+                              <input class="form-control form-sm my-auto" name="name" id="name" type="text" placeholder="Nome Completo">
+                          <h5 class="fs-subtitle animated animated1 bounceInRight mt-4">E-mail</h5> 
+                              <input class="form-control form-sm my-auto" name="email" id="email" type="email" placeholder="exemplo.exemplo@poly.com">
+                              <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                      </fieldset>
+                          <fieldset>
+                              <h2 class="fs-title">Onde Sera realizado?</h2>
+                              <h5 class="fs-subtitle">Cep</h3>
+                              <input class="form-control form-sm mx my-auto" name="cep" id="cep" type="text" placeholder="apenas números" maxlength="8"> 
+                              <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                                                
+                              <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                          </fieldset>
+                          <fieldset>
+                              <h2 class="fs-title">Quantas vezes precisará da vigilância ?</h2>
+                              <select id="tipo" class="form-control mt-2">
+                                  <option selected>De 1 a 7 dias</option>
+                                  <option>De 7 a 15 dias</option>
+                                  <option>De 15 a 30 dias</option>
+                                  <option>De 30 a 60 dias</option>
+                                  <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                
+                                  <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                          </fieldset>
+                          <fieldset>
+                              <h2 class="fs-title">Observação</h2>
+                              <input type="text-area" name="message" id="message" placeholder="Caso queira adicionar alguma informação...">                                                                      
+                              <input type="button" name="previous" class="previous action-button" value="Anterior" />  
+                              <input type="submit"  class="action-button" value="Enviar" > 
+                          </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+     <div class="modal hide fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">        
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-dark">
+             <div class="col-md-8 mr-5">
+                 <h4 class="modal-title text-light">Portaria<i ><img src="https://png.icons8.com/ios/26/3eb8e4/door.png"></i></h4>    
+            </div> 
+                <div class="col-md-2 mt-2">
+                  <h5 class="ml-2 text-success">É Grátis!</h5>
+                </div>
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+             </div>
+
+        <div class="modal-body">
+            <div class="alert">Mensagem enviada com sucesso</div>
+                <!-- multistep form -->
+            <form id="msform">
+                <!-- progressbar -->
+                <ul id="progressbar" class="d-flex justify-content-center">
+                <li class="active">Info</li>
+                <li >Local</li>
+                <li >Quantidade</li>
+                <li>Concluido</li>
+                </ul>
+                <!-- fieldsets -->
+                <fieldset>
+                    <h2 class="fs-title">Informações</h2>
+                        <h5 class="fs-subtitle animated bounceInRight">Nome</h5> 
+                            <input class="form-control form-sm my-auto" name="name" id="name" type="text" placeholder="Nome Completo">
+                        <h5 class="fs-subtitle animated animated1 bounceInRight mt-4">E-mail</h5> 
+                            <input class="form-control form-sm my-auto" name="email" id="email" type="email" placeholder="exemplo.exemplo@poly.com">
+                            <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                    </fieldset>
+                        <fieldset>
+                            <h2 class="fs-title">Onde Sera realizado?</h2>
+                            <h5 class="fs-subtitle">Cep</h3>
+                            <input class="form-control form-sm mx my-auto" name="cep" id="cep" type="text" placeholder="apenas números" maxlength="8"> 
+                            <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                                                
+                            <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                        </fieldset>
+                        <fieldset>
+                            <h2 class="fs-title">Quantas Pessoas precisará ?</h2>
+                            <select id="tipo" class="form-control mt-2">
+                                <option selected>De 1 a 3 dias</option>
+                                <option>De 3 a 5 dias</option>
+                                <option>De 5 a 10 dias</option>
+                                <option>Mais...</option>
+                                <input type="button" name="previous" class="previous action-button mt-3" value="Anterior" />                                
+                                <input type="button" name="next" class="next action-button mt-3" value="Próximo" />
+                        </fieldset>
+                        <fieldset>
+                            <h2 class="fs-title">Observação</h2>
+                            <input type="text-area" name="message" id="message" placeholder="Caso queira adicionar alguma informação...">                                                                      
+                            <input type="button" name="previous" class="previous action-button" value="Anterior" />  
+                            <input type="submit"  class="action-button" value="Enviar" > 
+                        </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> 
+        </section>
